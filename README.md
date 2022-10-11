@@ -1,4 +1,4 @@
-# ToolsChallenge
+# Tools Java Challenge
 
 API de pagamento que realiza processamento de solicitaçoes de compra e estorno da mesma.
 A API permite consultar os dados do pagamento enviados e estorno
@@ -34,11 +34,11 @@ O sistema possui dois endpoint:
 ```javascript
 {
   "transacao": {
-    "cartao": "44441231231231234",
+    "cartao": "44444444444444444",
     "descricao": {
       "dataHora": "2022-12-20",
       "estabelecimento": "Teste",
-      "valor": 500.50
+      "valor": 846.42=
     },
     "formaPagamento": {
       "parcelas": 1,
@@ -56,7 +56,7 @@ O sistema possui dois endpoint:
             "cartao": "*************1234",
             "descricao": {
             "valor": 500.5,
-                "dataHora": "2022-12-20",
+                "dataHora": "2022-10-10",
                 "estabelecimento": "Teste",
                 "nsu": 1234,
                 "condigoAutorizacao": 1111111,
@@ -71,7 +71,7 @@ O sistema possui dois endpoint:
 ```
 
 
-1. **``PUT /estorno``**: *Para fazer o estorno basta passar o idPagamento:*
+1. **``PUT /estorno``**: *Para realizar o estorno deve se passar o idPagamento:*
    *Exemplo do corpo da resposta do estorno:*
 ```javascript
 {
